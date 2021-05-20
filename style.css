@@ -1,6 +1,6 @@
-/* Template Stylesheet */
-#main_wrapper{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1em;
-    display: flex;
+/* Reservia Stylesheet */
+main {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  display: flex;
 }
