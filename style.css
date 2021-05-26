@@ -1,5 +1,5 @@
 /* Reservia Stylesheet */
-main {
+body {
   font-family: "Raleway", sans-serif;
   font-size: 1em;
   width: 90%;
@@ -8,9 +8,10 @@ main {
 }
 ul {
   list-style: none;
+  padding: 0px;
 }
 h1 {
-  font-weight: bolder; /*le bolder ne fait pas plus gras que le bold ? faut-il déclarer une police "raleway Bold" en plus ??*/
+  font-weight: bold;
   font-size: 1.3em;
 }
 h2 {
@@ -23,7 +24,8 @@ header {
   align-items: flex-start;
 }
 header img {
-  max-width: 12%;
+  max-width: 10%;
+  align-self: center;
 }
 header ul {
   display: flex;
@@ -33,9 +35,9 @@ header ul {
   align-items: center;
 }
 header li {
-  margin: 0 30px;
+  margin: 0px 30px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 header a {
   color: black;
@@ -43,7 +45,7 @@ header a {
 }
 header a:hover {
   color: #0065fc;
-  text-decoration: none;
+  text-decoration: overline;
 }
 strong {
   color: #0065fc;
@@ -72,7 +74,7 @@ aside img {
   top: 5px;
   right: 5px;
 }
-art {
+body article {
   flex-flow: row wrap;
   width: 30%;
   height: 30%;
@@ -93,4 +95,13 @@ aside,
 footer,
 #accomodation {
   background-color: #f2f2f2;
+}
+footer {
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+}
+footer article {
+  width: 33%;
+  padding: 20px;
 }
