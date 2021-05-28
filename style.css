@@ -1,7 +1,7 @@
 /* Reservia Stylesheet */
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
   width: 90%;
   margin: auto;
   text-align: left;
@@ -12,16 +12,17 @@ ul {
 }
 h1 {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 h2 {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 0.8em;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 20px;
 }
 header img {
   max-width: 10%;
@@ -37,7 +38,7 @@ header ul {
 header li {
   margin: 0px 30px;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 header a {
   color: black;
@@ -49,7 +50,20 @@ header a:hover {
 }
 strong {
   color: #0065fc;
-  font-weight: bolder; /*le bolder ne fait pas plus gras que le bold ? faut-il déclarer une police "raleway Bold" en plus ??*/
+  font-weight: bold;
+}
+#search h1, p {
+  margin: 8px 0px;
+}
+#search form {
+  margin: 15px 0px;
+}
+#filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
 #results {
   display: flex;
@@ -57,22 +71,22 @@ strong {
   justify-content: space-between;
   align-items: flex-start;
 }
-span i {
-  font-size: 1.5em;
-}
 aside {
-  max-width: 30%;
+  width: 35%;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-start;
+}
+#pop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 aside img {
-  width: 50%;
-  height: 50%;
-  position: relative;
-  top: 5px;
-  right: 5px;
+  width: 80px;
+  height: 80px;
 }
 body article {
   flex-flow: row wrap;
