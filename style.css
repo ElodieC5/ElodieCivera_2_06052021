@@ -5,6 +5,8 @@
 body {
   font-family: "Raleway", sans-serif;
   font-size: 0.7em;
+}
+main {
   width: 90%;
   margin: auto;
   text-align: left;
@@ -25,36 +27,37 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  width: 90%;
+  margin: 0px auto;
 }
 header img {
-  max-width: 10%;
+  max-width: 8%;
   align-self: center;
 }
 header ul {
   display: flex;
-  width: fit-content;
-  padding: 0;
   flex-flow: row nowrap;
   align-items: center;
 }
 header li {
-  margin: 0px 30px;
-  font-weight: bold;
+  padding: 20px; /*border far over the text - do not choose overline*/
+}
+header li:hover {
+  border-top: 2px #0065fc solid;
+  color: #0065fc;
 }
 header a {
   color: black;
-  text-decoration: none;
+  text-decoration: none; /*remove the link's underline*/
 }
 header a:hover {
   color: #0065fc;
-  text-decoration: overline;
 }
 strong {
   color: #0065fc;
   font-weight: bold;
 }
-#search h1,
+#recherche h1,
 p {
   margin: 8px 0px;
 }
@@ -112,7 +115,7 @@ form input {
 #isea {
   width: 5%;
 }
-#filters {
+#filtres {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -120,7 +123,7 @@ form input {
   width: 60%;
   height: 25px;
 }
-.filter {
+.filtre {
   width: 70%;
   height: 25px;
   margin: 10px 0px;
@@ -130,7 +133,7 @@ form input {
   justify-content: flex-start;
   align-items: center;
 }
-.filter i {
+.filtre i {
   background-color: #deebff;
   color: #0065fc;
   font-size: 1em;
@@ -141,12 +144,11 @@ form input {
   justify-content: center;
   align-items: center;
 }
-.filter input {
+.filtre input {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   color: black;
   font-size: 0.9em;
-  padding: 3px;
   border: none;
   background-color: white;
 }
@@ -187,7 +189,7 @@ aside img {
   width: 40%;
   height: 60px;
 }
-#accomodation {
+#hebergements {
   width: 60%;
   height: 400px;
   display: flex;
@@ -195,42 +197,40 @@ aside img {
   align-items: flex-start;
   justify-content: space-between;
 }
-#accomodation h1 {
+#hebergements h1 {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-#accomodation article {
+#hebergements article {
   flex-flow: row wrap;
   width: 30%;
   height: 30%;
 }
-#accomodation img {
+#hebergements img {
   width: 100%;
   height: 60px;
 }
 aside,
 footer,
-#accomodation {
+#hebergements {
   background-color: #f2f2f2;
 }
-#activity1 img {
+#activites-1 img {
   width: 150px;
   height: 250px;
 }
-#activity2 img {
+#activites-2 img {
   width: 150px;
   height: 125px;
 }
 footer {
   display: flex;
   justify-content: flex-start;
-  text-align: start;
 }
 footer article {
-  width: 33%;
-  padding: 20px;
+  margin: 1% 5%;
 }
 @media screen and (min-width: 768px) {
   #isea {
