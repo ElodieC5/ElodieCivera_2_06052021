@@ -31,7 +31,7 @@ header {
   margin: 0px auto;
 }
 header img {
-  max-width: 8%;
+  width: 10%;
   align-self: center;
 }
 header ul {
@@ -59,7 +59,7 @@ strong {
 }
 #recherche h1,
 p {
-  margin: 8px 0px;
+  margin: 5px;
 }
 form {
   display: flex;
@@ -77,11 +77,6 @@ form div {
   justify-content: center;
   align-items: center;
 }
-form input {
-  border: none;
-  width: 100%;
-  font-size: 1em;
-}
 #iloc {
   background-color: #f2f2f2;
   width: 15%;
@@ -93,11 +88,15 @@ form input {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   color: black;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 5px;
 }
 #itxt {
   width: 55%;
+}
+#itxt input {
+  width: 100%;
+  border: none;
 }
 #ibut {
   width: 30%;
@@ -105,12 +104,13 @@ form input {
 #ibut input {
   width: 100%;
   height: 30px;
+  border: none;
   border-radius: 0px 10px 10px 0px;
   background-color: #0065fc;
   color: #f2f2f2;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 #isea {
   width: 5%;
@@ -120,37 +120,44 @@ form input {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
-  height: 25px;
+  width: 70%;
+  height: 30px;
+  margin: 10px 0px;
+  border: none;
 }
 .filtre {
-  width: 70%;
-  height: 25px;
+  position: relative; /* parent below his childs */
+  width: fit-content;
+  height: 20px;
   margin: 10px 0px;
-  border: 3px #f2f2f2 solid;
+  border: 2px #f2f2f2 solid;
   border-radius: 30px 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .filtre i {
+  position: absolute; /* this child has to start at a fixed position and is the upper */
+  top: -2px;
+  left: -2px;
   background-color: #deebff;
   color: #0065fc;
-  font-size: 1em;
+  font-size: 0.9em;
   border-radius: 30px;
-  width: 30px;
-  height: 30px;
+  min-width: 22px;
+  min-height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.filtre input {
+.filtre span {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   color: black;
-  font-size: 0.9em;
+  font-size: 0.8em;
   border: none;
   background-color: white;
+  padding: 0px 5px 0px 25px;
 }
 #info {
   display: inline-block;
@@ -169,6 +176,7 @@ form input {
   flex-flow: row-reverse wrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 20px 0;
   height: 400px;
 }
 aside {
