@@ -1,252 +1,291 @@
 /* Reservia Stylesheet */
 
 /*!!!FAIRE LE MENAGE DES PROPES EVENTUELLEMENT EN DOUBLON*/
-
-body {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.7em;
-}
-main {
-  width: 90%;
-  margin: auto;
-  text-align: left;
-}
-ul {
-  list-style: none;
-  padding: 0px;
-}
-h1 {
-  font-weight: bold;
-  font-size: 1.1em;
+* {
+	font-family: "Raleway", sans-serif;
+	padding: 0;
+	margin: 0;
 }
 h2 {
-  font-weight: bold;
-  font-size: 0.9em;
+	font-size: 1em;
+}
+main {
+	width: 90%;
+	margin: auto; /* allow centering of the main in the page*/
+}
+ul {
+	list-style: none;
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 90%;
-  margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 50px;
 }
 header img {
-  width: 10%;
-  align-self: center;
+	width: 7%;
+	align-self: center;
 }
 header ul {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 header li {
-  padding: 20px; /*border far over the text - do not choose overline*/
+	padding: 60px 40px; /*border far over the text - do not choose overline*/
 }
 header li:hover {
-  border-top: 2px #0065fc solid;
-  color: #0065fc;
+	border-top: 2px #0065fc solid;
+	color: #0065fc;
 }
 header a {
-  color: black;
-  text-decoration: none; /*remove the link's underline*/
+	color: black;
+	text-decoration: none; /*remove the link's underline*/
 }
 header a:hover {
-  color: #0065fc;
+	color: #0065fc;
 }
 strong {
-  color: #0065fc;
-  font-weight: bold;
-}
-#recherche h1,
-p {
-  margin: 5px;
+	/* subscription */
+	color: #0065fc;
+	font-weight: bold;
 }
 form {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: stretch;
-  align-items: center;
-  width: 35%;
-  height: 30px;
-  margin: 10px 0px;
-  border: 1px #f2f2f2 solid;
-  border-radius: 10px 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 30%;
+	min-width: 500px;
+	height: 50px;
+	margin: 30px 0px;
+	border: 1px #f2f2f2 solid;
+	border-radius: 20px 20px;
 }
 form div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
 }
 #iloc {
-  background-color: #f2f2f2;
-  width: 15%;
-  height: 30px;
-  border-radius: 10px 0px 0px 10px;
-  vertical-align: middle;
-}
-::placeholder {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  color: black;
-  font-size: 0.8em;
-  padding: 5px;
+	background-color: #f2f2f2;
+	min-width: 50px;
+	border-radius: 20px 0px 0px 20px;
+	vertical-align: middle;
 }
 #itxt {
-  width: 55%;
+	min-width: 55%;
+}
+::placeholder {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: black;
 }
 #itxt input {
-  width: 100%;
-  border: none;
+	width: 100%;
+	height: 50px;
+	padding-left: 20px;
+	border: none;
 }
 #ibut {
-  width: 30%;
+	width: 35%;
 }
 #ibut input {
-  width: 100%;
-  height: 30px;
-  border: none;
-  border-radius: 0px 10px 10px 0px;
-  background-color: #0065fc;
-  color: #f2f2f2;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 0.8em;
+	width: 100%;
+	height: 50px;
+	border: none;
+	border-radius: 0px 20px 20px 0px;
+	background-color: #0065fc;
+	color: #f2f2f2;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	font-size: 1em;
 }
 #isea {
-  width: 5%;
+	min-width: 60px;
+	min-height: 60px;
+	border-radius: 15px;
+	background-color: #0065fc;
+	color: #f2f2f2;
+	display: flex;
+	justify-self: flex-end;
+	justify-content: center;
+	align-self: center;
 }
 #filtres {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-  height: 30px;
-  margin: 10px 0px;
-  border: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 65%;
+	height: 50px;
+	margin: 40px 0px;
+	border: none;
 }
 .filtre {
-  position: relative; /* parent below his childs */
-  width: fit-content;
-  height: 20px;
-  margin: 10px 0px;
-  border: 2px #f2f2f2 solid;
-  border-radius: 30px 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+	position: relative; /* parent below his childs */
+	width: fit-content;
+	min-width: 160px;
+	height: 50px;
+	border: 2px #f2f2f2 solid;
+	border-radius: 30px 30px;
+	display: flex;
+	justify-content: justify;
+	align-items: center;
 }
 .filtre i {
-  position: absolute; /* this child has to start at a fixed position and is the upper */
-  top: -2px;
-  left: -2px;
-  background-color: #deebff;
-  color: #0065fc;
-  font-size: 0.9em;
-  border-radius: 30px;
-  min-width: 22px;
-  min-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: absolute; /* this child has to start at a fixed position and is the upper */
+	top: -2px;
+	left: -2px;
+	background-color: #deebff;
+	color: #0065fc;
+	font-size: 1.3em;
+	border-radius: 30px;
+	width: 54px;
+	height: 54px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .filtre span {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  color: black;
-  font-size: 0.8em;
-  border: none;
-  background-color: white;
-  padding: 0px 5px 0px 25px;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	color: black;
+	border: none;
+	background-color: white;
+	padding: 0px 18px 0px 60px; /* padding under the icon */
 }
 #info {
-  display: inline-block;
-  text-align: center;
-  background-color: white;
-  color: #0065fc;
-  width: 10px;
-  height: 10px;
-  padding: 2px;
-  font-size: 0.8em;
-  border-radius: 30px;
-  border: 2px #f2f2f2 solid;
+	/* info icon */
+	display: inline-block;
+	text-align: center;
+	background-color: white;
+	color: #0065fc;
+	width: 15px;
+	height: 15px;
+	margin: 20px 0;
+	padding: 2px;
+	font-size: 0.8em;
+	border-radius: 30px;
+	border: 2px #f2f2f2 solid;
 }
 #results {
-  display: flex;
-  flex-flow: row-reverse wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 20px 0;
-  height: 400px;
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 30px 0;
+	height: 300px;
 }
 aside {
-  width: 35%;
-  height: 400px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+	width: 35%;
+	height: 320px;
+	padding: 15px;
 }
-#pop {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+#populaire {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+aside article {
+	display: flex;
+	align-items: flex-start;
+	height: 100px;
+	padding: 5px;
 }
 aside img {
-  width: 40%;
-  height: 60px;
+	width: 40%;
+	height: 90px;
+}
+aside div {
+	margin: 0;
+	padding: 0 5px;
 }
 #hebergements {
-  width: 60%;
-  height: 400px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+	width: 60%;
+	height: 620px;
+	padding: 15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 #hebergements h1 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+	width: 100%;
+
+	justify-content: flex-start;
+	align-items: center;
 }
 #hebergements article {
-  flex-flow: row wrap;
-  width: 30%;
-  height: 30%;
+	width: 30%;
+	height: 110px;
 }
 #hebergements img {
-  width: 100%;
-  height: 60px;
+	width: 100%;
+	height: 80px;
 }
 aside,
 footer,
 #hebergements {
-  background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
-#activites-1 img {
-  width: 150px;
-  height: 250px;
+#activite {
+	width: 100%;
+	height: 320px;
+	margin: 10px 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
-#activites-2 img {
-  width: 150px;
-  height: 125px;
+.activite {
+	width: 50%;
+	display: flex;
+}
+.activite-1 {
+	max-width: 25%;
+	height: 250px;
+	order: 1;
+}
+.activite-2 {
+	max-width: 25%;
+	height: 125px;
+	order: 2;
+}
+.activite-3 {
+	max-width: 25%;
+	height: 100px;
+	order: 3;
+}
+.activite-1 img {
+	max-width: 100%;
+	height: 230px;
+}
+.activite-2 img {
+	max-width: 100%;
+	height: 105px;
+}
+.activite-3 img {
+	max-width: 100%;
+	height: 80px;
 }
 footer {
-  display: flex;
-  justify-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
 }
 footer article {
-  margin: 1% 5%;
+	margin: 1% 5%;
 }
 @media screen and (min-width: 768px) {
-  #isea {
-    display: none;
-  }
+	#isea {
+		display: none;
+	}
 }
 @media screen and (max-width: 768px) {
-  #ibut {
-    display: none;
-  }
+	#ibut {
+		display: none;
+	}
 }
