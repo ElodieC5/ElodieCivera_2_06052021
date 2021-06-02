@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <header>
         <img src="images/logo/Reservia@3x.png" alt="logo_reservia" />
         <nav>
@@ -62,7 +61,7 @@
         </p> <!-- le nombre "500" devrait être lié au choix de la ville dans le moteur de recherche -->
         <section id="results">
             <aside>
-                <div id="pop">
+                <div id="populaire">
                     <h1>Les plus populaires</h1>
                     <p><i class="fas fa-chart-line"></i></p>
                 </div>
@@ -109,15 +108,13 @@
                 <article>
                     <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                         alt="Auberge Canebière">
-                    <div>
                         <h2>Auberge la Canebière</h2>
                         <p>Nuit à partir de 25€</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                        <i class="far fa-star"></i> 
                 </article>
                 <article>
                     <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel Port">
@@ -178,39 +175,43 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h2>Afficher plus</h2>
                 </article>
+                <div id="autre-hebergement">
+                    <h2>Afficher plus</h2>
+                </div>
             </div>
         </section>
-        <section id="activites-1">
             <h1>Activités à Marseille</h1>
-            <article>
+            <section id="activite">
+            <div class="activite">
+            <article class="activite-1">
                 <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                 <h2>Le Vieux Port</h2>
             </article>
-            <article>
+            <article class="activite-2">
                 <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort Pomègues">
                 <h2>Fort de Pomègues</h2>
             </article>
-            <article>
+            <article class="activite-3">
                 <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles Frioul">
                 <h2>Îles du Frioul</h2>
             </article>
-        </section>
-        <!--2 sections d'activité car mise en page risque d'être problématique en desktop ?-->
-        <section id="activites-2">
-            <article>
+        </div>
+            <div class="activite">
+            <article class="activite-1">
                 <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Calanques">
                 <h2>Parc National des Calanques</h2>
             </article>
-            <article>
+            <article class="activite-3">
                 <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame">
                 <h2>Notre-Dame-de-la-Garde</h2>
             </article>
-            <article>
+            <article class="activite-2">
                 <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                 <h2>Parc Longchamp</h2>
             </article>
+        </div>
+    
         </section>
     </main>
     <footer>
