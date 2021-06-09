@@ -18,8 +18,6 @@ ul {
 	list-style: none;
 }
 a {
-	display: flex;
-	flex-direction: inherit; /* to keep the same than the article */
 	text-decoration: none;
 	color: unset;
 }
@@ -189,6 +187,10 @@ form div {
 	margin: 40px 0;
 	width: 100%;
 }
+#results a {
+	display: flex;
+	flex-direction: inherit; /* to keep the same than the article */
+}
 #results p {
 	font-size: 0.9em;
 	padding: 5px 0;
@@ -273,7 +275,7 @@ aside div {
 	width: 100%;
 	padding: 10px 0;
 }
-#hebergements article {
+#hebergements a {
 	width: 28%;
 	height: 220px;
 	margin-bottom: 20px;
@@ -418,6 +420,7 @@ footer {
 	height: 215px;
 }
 footer article {
+	width: 25%;
 	height: 120px;
 	margin: 50px 3.5%;
 }
