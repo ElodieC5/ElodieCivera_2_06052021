@@ -18,7 +18,10 @@ ul {
 	list-style: none;
 }
 a {
+	display: flex;
+	flex-direction: inherit; /* to keep the same than the article */
 	text-decoration: none;
+	color: unset;
 }
 em {
 	font-style: normal;
@@ -55,10 +58,6 @@ header li {
 header li:hover {
 	border-top: 2px #0065fc solid;
 	color: #0065fc;
-}
-header a {
-	color: black;
-	text-decoration: none; /*remove the link's underline*/
 }
 header a:hover {
 	color: #0065fc;
@@ -200,8 +199,7 @@ form div {
 	padding-bottom: 0;
 }
 #results #grey {
-	color: #f2f2f2;
-	font-weight: bold;
+	color: #d2d2d2; /* PAS MEME CODE COULEUR MAIS IMPOSSIBLE SINON ?? */
 }
 aside {
 	width: 24%;
@@ -214,7 +212,7 @@ aside {
 }
 #populaire {
 	width: 100%;
-	height: auto;
+	height: auto; /* POURQUOI ??????????????????? */
 	padding: 35px 0;
 	display: flex;
 	justify-content: space-between;
@@ -255,33 +253,31 @@ aside div {
 	padding: 5px 20px;
 }
 #hebergements {
-	width: 65%;
+	width: 68%;
 	padding: 20px;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: center;
 	border-radius: 20px;
 }
 #hebergements h1 {
 	width: 100%;
 	padding: 35px 0;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+}
+#hebergements .plus {
+	width: 100%;
+	padding: 10px 0;
 }
 #hebergements article + h2 {
 	/* first h2 after the articles */
 	width: 100%;
 	padding: 10px 0;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 }
 #hebergements article {
-	width: 30%;
+	width: 28%;
 	height: 220px;
-	display: flex;
 	margin-bottom: 20px;
+	margin-right: 20px;
 	border: 10px white solid;
 	border-radius: 20px;
 	box-shadow: 3px 5px 15px #c2c2c2; /* PAS MEME CODE COULEUR MAIS IMPOSSIBLE SINON ?? */
@@ -292,7 +288,7 @@ aside div {
 #hebergements img {
 	width: 100%;
 	object-fit: cover;
-	height: 65%;
+	height: 140px;
 	border-radius: 10px;
 }
 #hebergements div {
@@ -306,9 +302,6 @@ aside div {
 #hebergements i {
 	color: #0065fc;
 	font-size: 0.9em;
-}
-#hebergements .plus {
-	height: 40px;
 }
 aside,
 footer,
@@ -426,13 +419,13 @@ footer {
 }
 footer article {
 	height: 120px;
-	margin: 50px 10%;
+	margin: 50px 3.5%;
 }
 footer h2 {
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 }
 footer li {
-	padding: 6px 0;
+	padding: 0 100px 6px 0;
 }
 @media screen and (min-width: 768px) {
 	#isea {
