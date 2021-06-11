@@ -342,7 +342,7 @@ footer,
 	grid-row: 1 / 4;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
-	box-shadow: 0 7px 5px #f2f2f2;
+	box-shadow: 0 4px 5px #f2f2f2;
 }
 .activite-2 {
 	width: 100%;
@@ -350,7 +350,7 @@ footer,
 	grid-row: 1 / 3;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
-	box-shadow: 0 7px 5px #f2f2f2;
+	box-shadow: 0 4px 5px #f2f2f2;
 }
 .activite-3 {
 	width: 100%;
@@ -522,8 +522,13 @@ footer li {
 	#hebergements a {
 		width: 100%;
 	}
+	#activite {
+		margin: 0 0 60px 0;
+	}
 	.activite {
 		display: flex;
+		flex-direction: column;
+		height: 1300px;
 	}
 	.activite img {
 		height: 130px;
