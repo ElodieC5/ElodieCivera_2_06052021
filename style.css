@@ -123,19 +123,17 @@ form div {
 }
 #filtres {
 	display: flex;
-	justify-content: space-between;
-	align-content: center;
+	flex-flow: row wrap;
+	justify-content: flex-start;
 	align-items: center;
-	max-width: 940px;
-	height: 50px;
-	margin: 40px 0px;
+	margin: 40px 0;
 	border: none;
 }
 .filtre {
 	position: relative; /* parent below his childs */
 	width: fit-content;
 	height: 50px;
-	margin: 1%;
+	margin: 10px 20px;
 	border: 3px #f2f2f2 solid;
 	border-radius: 30px 30px;
 	display: flex;
@@ -241,7 +239,7 @@ aside article {
 	margin-bottom: 30px;
 	border: 10px white solid;
 	border-radius: 20px;
-	box-shadow: 3px 5px 15px #c2c2c2; /* PAS MEME CODE COULEUR MAIS IMPOSSIBLE SINON ?? */
+	box-shadow: 3px 5px 15px #f2f2f2;
 	background-color: white;
 }
 aside img {
@@ -290,7 +288,7 @@ aside div {
 	margin-right: 20px;
 	border: 10px white solid;
 	border-radius: 20px;
-	box-shadow: 3px 5px 15px #c2c2c2; /* PAS MEME CODE COULEUR MAIS IMPOSSIBLE SINON ?? */
+	box-shadow: 3px 5px 15px #f2f2f2;
 	background-color: white;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -427,7 +425,7 @@ footer {
 	align-items: flex-start;
 }
 footer article {
-	width: 30%;
+	width: auto;
 	margin: 2% 5%;
 }
 footer h2 {
@@ -436,6 +434,20 @@ footer h2 {
 @media screen and (min-width: 768px) {
 	#isea {
 		display: none;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	#filtres h2 {
+		width: 100%; /* allow return to line for the other elements */
+	}
+	#hebergements {
+		width: 50%;
+	}
+	aside {
+		width: 35%;
+	}
+	#hebergements a {
+		width: 38%;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -488,23 +500,14 @@ footer h2 {
 		order: 1;
 		justify-content: center;
 	}
-	#filtres {
-		flex-flow: row wrap;
-		justify-content: flex-start;
-		height: auto;
-	}
-	#filtres h2 {
-		width: 100%;
-		margin-bottom: 10px;
-	}
-	.filtre {
-		margin: 10px 20px;
-	}
 	#itxt {
 		min-width: 50%;
 	}
 	#ibut {
 		display: none;
+	}
+	#filtres h2 {
+		width: 100%; /* allow return to line for the other elements */
 	}
 	aside {
 		flex-direction: column;
@@ -533,8 +536,5 @@ footer h2 {
 		flex-flow: column nowrap;
 		height: fit-content;
 		justify-content: space-between;
-	}
-	footer article {
-		width: 90%;
 	}
 }
