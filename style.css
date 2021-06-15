@@ -30,8 +30,8 @@ strong {
 	font-weight: bold;
 }
 main {
-	width: 93%;
-	margin: auto; /* allow centering of the main in the page*/
+	width: 90%;
+	margin: auto; /* allow centering main in the page*/
 }
 header {
 	display: flex;
@@ -85,13 +85,14 @@ form div {
 ::placeholder {
 	font-weight: bold;
 	color: black;
+	text-align: center;
 }
 #itxt input {
 	width: 100%;
 	height: 50px;
-	padding-left: 20px;
+	padding: 7px;
 	border: none;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 	color: #0065fc;
 }
@@ -123,6 +124,7 @@ form div {
 #filtres {
 	display: flex;
 	justify-content: space-between;
+	align-content: center;
 	align-items: center;
 	max-width: 940px;
 	height: 50px;
@@ -132,8 +134,8 @@ form div {
 .filtre {
 	position: relative; /* parent below his childs */
 	width: fit-content;
-	min-width: 150px;
 	height: 50px;
+	margin: 1%;
 	border: 3px #f2f2f2 solid;
 	border-radius: 30px 30px;
 	display: flex;
@@ -141,7 +143,7 @@ form div {
 	align-items: center;
 }
 .filtre span:hover {
-	font-size: 1.4em;
+	font-size: 1em;
 	color: #0065fc;
 	cursor: pointer;
 	text-shadow: 10px 10px 15px;
@@ -190,7 +192,7 @@ form div {
 	display: flex;
 	flex-flow: row-reverse wrap;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: stretch;
 	margin: 40px 0;
 	width: 100%;
 }
@@ -211,11 +213,11 @@ form div {
 	color: #d2d2d2; /* PAS MEME CODE COULEUR MAIS IMPOSSIBLE SINON ?? */
 }
 aside {
-	width: 24%;
+	width: 27%;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: flex-start;
 	border-radius: 20px;
 }
@@ -257,12 +259,12 @@ aside div {
 	align-items: center;
 	flex-wrap: wrap;
 	align-content: space-around;
-	width: 60%;
+	width: 70%;
 	height: 145px;
-	padding: 5px 20px;
+	padding: 5px 3%;
 }
 #hebergements {
-	width: 68%;
+	width: 60%;
 	padding: 20px;
 	display: flex;
 	flex-flow: row wrap;
@@ -284,7 +286,6 @@ aside div {
 }
 #hebergements a {
 	width: 28%;
-	height: 220px;
 	margin-bottom: 20px;
 	margin-right: 20px;
 	border: 10px white solid;
@@ -297,7 +298,7 @@ aside div {
 #hebergements img {
 	width: 100%;
 	object-fit: cover;
-	height: 140px;
+	height: 120px;
 	border-radius: 10px;
 }
 #hebergements div {
@@ -326,7 +327,7 @@ footer,
 	padding: 20px 0;
 }
 #activite h2 {
-	padding: 20px;
+	padding: 15px;
 }
 .activite {
 	width: 100%;
@@ -334,7 +335,7 @@ footer,
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(3, 1fr);
-	grid-gap: 30px;
+	grid-gap: 2%;
 }
 .activite-1 {
 	width: 100%;
@@ -342,7 +343,7 @@ footer,
 	grid-row: 1 / 4;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
-	box-shadow: 0 4px 5px #f2f2f2;
+	box-shadow: 0 5px 5px #f2f2f2;
 }
 .activite-2 {
 	width: 100%;
@@ -350,7 +351,7 @@ footer,
 	grid-row: 1 / 3;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
-	box-shadow: 0 4px 5px #f2f2f2;
+	box-shadow: 0 5px 5px #f2f2f2;
 }
 .activite-3 {
 	width: 100%;
@@ -358,7 +359,7 @@ footer,
 	grid-row: 3 / 4;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
-	box-shadow: 0 7px 5px #f2f2f2;
+	box-shadow: 0 5px 5px #f2f2f2;
 }
 .activite-4 {
 	width: 100%;
@@ -366,7 +367,7 @@ footer,
 	grid-row: 1 / 4;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
-	box-shadow: 0 7px 5px #f2f2f2;
+	box-shadow: 0 5px 5px #f2f2f2;
 }
 .activite-5 {
 	width: 100%;
@@ -374,7 +375,7 @@ footer,
 	grid-row: 1 / 2;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
-	box-shadow: 0 7px 5px #f2f2f2;
+	box-shadow: 0 5px 5px #f2f2f2;
 }
 .activite-6 {
 	width: 100%;
@@ -382,17 +383,17 @@ footer,
 	grid-row: 2 / 4;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
-	box-shadow: 0 7px 5px #f2f2f2;
+	box-shadow: 0 5px 5px #f2f2f2;
 }
 .activite-1 img {
 	width: 100%;
-	height: 390px;
+	height: 385px;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
 }
 .activite-2 img {
 	width: 100%;
-	height: 174px;
+	height: 180px;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
 }
@@ -404,7 +405,7 @@ footer,
 }
 .activite-4 img {
 	width: 100%;
-	height: 390px;
+	height: 385px;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
 }
@@ -416,7 +417,7 @@ footer,
 }
 .activite-6 img {
 	width: 100%;
-	height: 174px;
+	height: 180px;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
 }
@@ -424,25 +425,20 @@ footer {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	height: 215px;
 }
 footer article {
-	width: 25%;
-	height: 120px;
-	margin: 50px 3.5%;
+	width: 30%;
+	margin: 2% 5%;
 }
 footer h2 {
-	margin-bottom: 20px;
-}
-footer li {
-	padding: 0 100px 6px 0;
+	margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
 	#isea {
 		display: none;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	header {
 		height: 150px;
 		padding: 40px 0px;
@@ -520,7 +516,7 @@ footer li {
 		background-color: white;
 	}
 	#hebergements a {
-		width: 100%;
+		width: 90%;
 	}
 	#activite {
 		margin: 0 0 60px 0;
@@ -536,10 +532,9 @@ footer li {
 	footer {
 		flex-flow: column nowrap;
 		height: fit-content;
-		padding: 20px;
+		justify-content: space-between;
 	}
 	footer article {
-		width: 100%;
-		margin: 10px;
+		width: 90%;
 	}
 }
