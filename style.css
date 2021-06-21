@@ -15,7 +15,7 @@ ul {
 }
 a {
 	text-decoration: none;
-	color: unset;
+	color: black;
 }
 em {
 	font-style: normal;
@@ -38,7 +38,6 @@ header {
 	margin-bottom: 25px;
 }
 header img {
-	position: relative;
 	width: 9%;
 	align-self: center;
 }
@@ -52,7 +51,6 @@ header li {
 }
 header li:hover {
 	border-top: 2px #0065fc solid;
-	color: #0065fc;
 }
 header a:hover {
 	color: #0065fc;
@@ -71,13 +69,11 @@ form div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 50px;
 }
 #iloc {
 	background-color: #f2f2f2;
 	min-width: 60px;
 	border-radius: 20px 0px 0px 20px;
-	vertical-align: middle;
 }
 ::placeholder {
 	font-weight: bold;
@@ -86,7 +82,6 @@ form div {
 }
 #itxt input {
 	width: 100%;
-	height: 50px;
 	padding: 7px;
 	border: none;
 	font-size: 1em;
@@ -103,7 +98,6 @@ form div {
 	border-radius: 0px 20px 20px 0px;
 	background-color: #0065fc;
 	color: #f2f2f2;
-	font-family: "Raleway", sans-serif;
 	font-weight: bold;
 	font-size: 1em;
 }
@@ -114,8 +108,6 @@ form div {
 	background-color: #0065fc;
 	color: #f2f2f2;
 	display: flex;
-	justify-self: flex-end;
-	justify-content: center;
 	align-self: center;
 }
 #filtres {
@@ -128,13 +120,12 @@ form div {
 }
 .filtre {
 	position: relative; /* parent below his childs */
-	width: fit-content;
 	height: 50px;
 	margin: 10px 20px;
 	border: 3px #f2f2f2 solid;
 	border-radius: 30px 30px;
 	display: flex;
-	justify-content: justify;
+	justify-content: center;
 	align-items: center;
 }
 .filtre span:hover {
@@ -218,7 +209,7 @@ aside {
 }
 #populaire {
 	width: 100%;
-	height: auto; /* POURQUOI ??????????????????? */
+	height: auto; /* if not, header is no longer aligned with results' header */
 	padding: 35px 0;
 	display: flex;
 	justify-content: space-between;
@@ -234,7 +225,7 @@ aside article {
 	width: 95%;
 	height: 145px;
 	margin-bottom: 30px;
-	border: 10px white solid;
+	border: 10px #fffffe solid;
 	border-radius: 20px;
 	box-shadow: 3px 5px 15px #f2f2f2;
 	background-color: white;
@@ -283,7 +274,7 @@ aside div {
 	width: 28%;
 	margin-bottom: 20px;
 	margin-right: 20px;
-	border: 10px white solid;
+	border: 10px #fffffe solid;
 	border-radius: 20px;
 	box-shadow: 3px 5px 15px #f2f2f2;
 	background-color: white;
@@ -332,89 +323,68 @@ footer,
 	grid-template-rows: repeat(3, 1fr);
 	grid-gap: 2%;
 }
-.activite-1 {
-	width: 100%;
-	grid-column: 1 / 2;
-	grid-row: 1 / 4;
-	border: #f2f2f2 1px solid;
-	border-radius: 20px;
-	box-shadow: 0 5px 5px #f2f2f2;
-}
-.activite-2 {
-	width: 100%;
-	grid-column: 2 / 3;
-	grid-row: 1 / 3;
-	border: #f2f2f2 1px solid;
-	border-radius: 20px;
-	box-shadow: 0 5px 5px #f2f2f2;
-}
-.activite-3 {
-	width: 100%;
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
-	border: #f2f2f2 1px solid;
-	border-radius: 20px;
-	box-shadow: 0 5px 5px #f2f2f2;
-}
-.activite-4 {
-	width: 100%;
-	grid-column: 3 / 4;
-	grid-row: 1 / 4;
-	border: #f2f2f2 1px solid;
-	border-radius: 20px;
-	box-shadow: 0 5px 5px #f2f2f2;
-}
-.activite-5 {
-	width: 100%;
-	grid-column: 4 / 5;
-	grid-row: 1 / 2;
-	border: #f2f2f2 1px solid;
-	border-radius: 20px;
-	box-shadow: 0 5px 5px #f2f2f2;
-}
+.activite-1,
+.activite-2,
+.activite-3,
+.activite-4,
+.activite-5,
 .activite-6 {
 	width: 100%;
-	grid-column: 4 / 5;
-	grid-row: 2 / 4;
 	border: #f2f2f2 1px solid;
 	border-radius: 20px;
 	box-shadow: 0 5px 5px #f2f2f2;
 }
-.activite-1 img {
-	width: 100%;
-	height: 385px;
-	object-fit: cover;
-	border-radius: 20px 20px 0 0;
+.activite-1 {
+	grid-column: 1 / 2;
+	grid-row: 1 / 4;
 }
-.activite-2 img {
-	width: 100%;
-	height: 250px;
-	object-fit: cover;
-	border-radius: 20px 20px 0 0;
+.activite-2 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
 }
-.activite-3 img {
-	width: 100%;
-	height: 65px;
-	object-fit: cover;
-	border-radius: 20px 20px 0 0;
+.activite-3 {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
 }
-.activite-4 img {
-	width: 100%;
-	height: 385px;
-	object-fit: cover;
-	border-radius: 20px 20px 0 0;
+.activite-4 {
+	grid-column: 3 / 4;
+	grid-row: 1 / 4;
 }
-.activite-5 img {
-	width: 100%;
-	height: 115px;
-	object-fit: cover;
-	border-radius: 20px 20px 0 0;
+.activite-5 {
+	grid-column: 4 / 5;
+	grid-row: 1 / 2;
 }
+.activite-6 {
+	grid-column: 4 / 5;
+	grid-row: 2 / 4;
+}
+.activite-1 img,
+.activite-2 img,
+.activite-3 img,
+.activite-4 img,
+.activite-5 img,
 .activite-6 img {
 	width: 100%;
-	height: 205px;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
+}
+.activite-1 img {
+	height: 385px;
+}
+.activite-2 img {
+	height: 250px;
+}
+.activite-3 img {
+	height: 65px;
+}
+.activite-4 img {
+	height: 385px;
+}
+.activite-5 img {
+	height: 115px;
+}
+.activite-6 img {
+	height: 205px;
 }
 footer {
 	display: flex;
