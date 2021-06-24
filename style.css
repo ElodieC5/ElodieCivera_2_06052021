@@ -382,6 +382,7 @@ footer,
 }
 .activite-5 img {
 	height: 115px;
+	object-position: 0 -1px;
 }
 .activite-6 img {
 	height: 205px;
@@ -420,6 +421,9 @@ footer h2 {
 	}
 	#hebergements a {
 		width: 38%;
+	}
+	.activite {
+		font-size: 0.9em;
 	}
 }
 @media screen and (max-width: 767px) {
