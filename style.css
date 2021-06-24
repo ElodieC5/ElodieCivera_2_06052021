@@ -129,7 +129,6 @@ form div {
 	align-items: center;
 }
 .filtre span:hover {
-	font-size: 1em;
 	color: #0065fc;
 	cursor: pointer;
 	text-shadow: 10px 10px 15px;
@@ -156,6 +155,7 @@ form div {
 	font-family: "Raleway", sans-serif;
 	font-weight: bold;
 	color: black;
+	font-size: 0.9em;
 	border: none;
 	background-color: white;
 	padding: 0px 18px 0px 60px; /* padding under the icon */
@@ -174,7 +174,7 @@ form div {
 	border-radius: 30px;
 	border: 2px #f2f2f2 solid;
 }
-#results {
+#resultats {
 	display: flex;
 	flex-flow: row-reverse wrap;
 	justify-content: space-between;
@@ -182,24 +182,24 @@ form div {
 	margin: 40px 0;
 	width: 100%;
 }
-#results a {
+#resultats a {
 	display: flex;
 	flex-direction: inherit; /* to keep the same than the article */
 }
-#results p {
+#resultats p {
 	font-size: 0.9em;
 	padding: 5px 0;
 }
-#results .chart {
+#resultats .chart {
 	color: #0065fc;
 	font-size: 0.8em;
 	padding-bottom: 0;
 }
-#results .grey {
+#resultats .grey {
 	color: #f2f2f2;
 }
 aside {
-	width: 27%;
+	width: 26%;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -209,7 +209,7 @@ aside {
 }
 #populaire {
 	width: 100%;
-	height: auto; /* if not, header is no longer aligned with results' header */
+	height: auto; /* if not, header is no longer aligned with resultats' header */
 	padding: 35px 0;
 	display: flex;
 	justify-content: space-between;
@@ -250,7 +250,7 @@ aside div {
 	padding: 5px 3%;
 }
 #hebergements {
-	width: 60%;
+	width: 65%;
 	padding: 20px;
 	display: flex;
 	flex-flow: row wrap;
@@ -271,9 +271,9 @@ aside div {
 	padding: 10px 0;
 }
 #hebergements a {
-	width: 28%;
+	width: 29%;
 	margin-bottom: 20px;
-	margin-right: 20px;
+	margin-right: 1%;
 	border: 10px #fffffe solid;
 	border-radius: 20px;
 	box-shadow: 3px 5px 15px #f2f2f2;

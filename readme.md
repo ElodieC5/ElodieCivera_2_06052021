@@ -1,7 +1,7 @@
 OpenClassrooms - Parcours Développement Front-End : Projet 2 
 Transformez une maquette en site web : “Reservia”
 
-    ... Fonctionnalités attendues :
+      ... Fonctionnalités attendues :
 
 - Le champ de recherche (par localisation) est un champ de saisie édité par l’usager. Le bouton de recherche est prévu en deux versions (desktop vs mobile) mais non encore fonctionnel.
 - Chacune des “cartes” d’hébergement ou d’activité doit être cliquable dans son intégralité. Les liens sont prévus mais non encore fonctionnels.
